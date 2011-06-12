@@ -51,9 +51,9 @@ namespace Lucene.Net.Util
 		public static  System.IO.FileInfo TEMP_DIR;
         static LuceneTestCase()
         {
-            String s = System.Environment.GetEnvironmentVariable("TEMP");
-            if (s == null)
-                throw new  Exception("To run tests, you need to define system property 'temp'");
+			// TODO: remove dependency on TEMP_DIR and remove static constructor from test base.
+            String s = Paths.TempDirectory;
+
             TEMP_DIR = new System.IO.FileInfo(s);
         }
 
