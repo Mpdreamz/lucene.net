@@ -49,12 +49,14 @@ namespace Lucene.Net.Util
 	public abstract class LuceneTestCase
 	{
 		public static  System.IO.FileInfo TEMP_DIR;
+
+
         static LuceneTestCase()
         {
 			// TODO: remove dependency on TEMP_DIR and remove static constructor from test base.
-            String s = Paths.TempDirectory;
+            String directory = Paths.TempDirectory;
 
-            TEMP_DIR = new System.IO.FileInfo(s);
+            TEMP_DIR = new System.IO.FileInfo(directory);
         }
 
 		[NonSerialized]

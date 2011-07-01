@@ -27,6 +27,8 @@ namespace Lucene.Net.Util
 	{
 		private static string s_tempDirectory = null;
 		private static string s_testDocDirectory = null;
+        private static string s_assemblyDirectory = null;
+        private static string s_projectRootDirectory = null;
 		
 		/// <summary>
 		/// Gets the temp directory.
@@ -83,6 +85,51 @@ namespace Lucene.Net.Util
 				return s_testDocDirectory;
 			}
 		}
+
+        /// <summary>
+        /// Gets the directory where the compiled assembly Lucene.Net.Tests is found.
+        /// We use Assembly.CodeBase in case NUnit or the current test runner 
+        /// has shadow copy enabled. 
+        /// </summary>
+        public static string AssemblyDirectory
+        {
+            get
+            {
+                if(s_assemblyDirectory == null)
+                {
+                    s_assemblyDirectory = typeof(Paths).Assembly.CodeBase;
+                  
+
+                    // ensure that we're only getting the directory.
+                    s_assemblyDirectory = Path.GetDirectoryName(s_assemblyDirectory);
+                    
+                    // CodeBase uses unc path, get rid of the file prefix if it exists.  
+                    if (s_assemblyDirectory.StartsWith("file:"))
+                        s_assemblyDirectory = s_assemblyDirectory.Replace(("file:" + Path.DirectorySeparatorChar).ToString(), "");
+                }
+                return s_assemblyDirectory;
+            }
+        }
+
+        /// <summary>
+        /// Gets the root directory for the project. e.g. if you were working on trunk
+        /// it would be the trunk directory. 
+        /// </summary>
+        public static string ProjectRootDirectory
+        {
+            get
+            {
+                if (s_projectRootDirectory == null)
+                {
+                    // we currently assume that the assembly's directory is root/bin/[Section]/[Build]
+                    // where [Section] is either core, demo, or contrib, and [Build] is either Debug or Release.  
+                    var assemblyLocation = AssemblyDirectory;
+                    s_projectRootDirectory = CombinePath(assemblyLocation, "..", "..", "..");
+                }
+                return s_projectRootDirectory;
+            }
+
+        }
 		
 		/// <summary>
 		/// Combines the path.
