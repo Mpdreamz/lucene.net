@@ -1,0 +1,201 @@
+<stylecopresultscache>
+  <version>11</version>
+  <sourcecode name="Attribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/30/2011 16:23:07</timestamp>
+    <milliseconds>561</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="UsingDirectivesMustBeOrderedAlphabeticallyByNamespace" ruleCheckId="SA1210">
+        <context>Using directives must be sorted alphabetically by the namespaces.</context>
+        <line>27</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="IDictionaryExtensions.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/30/2011 17:58:41</timestamp>
+    <milliseconds>144</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="FlagsAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 08:53:43</timestamp>
+    <milliseconds>235</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/30/2011 15:43:09</timestamp>
+    <milliseconds>40</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ICharTermAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:14:30</timestamp>
+    <milliseconds>276</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ICloneable.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:13:40</timestamp>
+    <milliseconds>27</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DictionaryExtensions.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:12:04</timestamp>
+    <milliseconds>786</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="BaseDictionaryOfTKeyTValue.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:12:42</timestamp>
+    <milliseconds>716</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WeakKeyComparerOfT.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:10:45</timestamp>
+    <milliseconds>842</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="CharTermAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 08:51:54</timestamp>
+    <milliseconds>60</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WeakKeyReferenceOfT.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:10:17</timestamp>
+    <milliseconds>297</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IFlagsAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 08:56:34</timestamp>
+    <milliseconds>937</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WeakNullReferenceOfT.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:09:41</timestamp>
+    <milliseconds>522</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WeakReferenceOfT.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:09:53</timestamp>
+    <milliseconds>898</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AttributeSource.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:02:33</timestamp>
+    <milliseconds>874</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ArrayUtil.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:03:33</timestamp>
+    <milliseconds>787</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:01:26</timestamp>
+    <milliseconds>231</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name=".NETPortable,Version=v4.0,Profile=Profile2.AssemblyAttributes.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/24/2011 23:53:46</timestamp>
+    <milliseconds>631</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="RamUsageEstimator.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:00:49</timestamp>
+    <milliseconds>587</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AttributeBase.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 08:59:00</timestamp>
+    <milliseconds>18</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WeakDictionaryOfTKeyTValue.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/30/2011 16:20:51</timestamp>
+      <milliseconds>894</milliseconds>
+    </settings>
+    <timestamp>07/31/2011 09:11:08</timestamp>
+    <milliseconds>75</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-1358734340">
+    <configuration>TRACE;DEBUG;SILVERLIGHT;WMP</configuration>
+  </project>
+</stylecopresultscache>
