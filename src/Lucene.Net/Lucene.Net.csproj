@@ -65,7 +65,7 @@
     <Compile Include="Util\RamUsageEstimator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Condition="Exists('$(MSBuildExtensionsPath32)\StyleCop\v4.5\StyleCop.targets')" Project="$(MSBuildExtensionsPath32)\StyleCop\v4.5\StyleCop.targets" />
+  <Import Condition="Exists('..\..\packages\StyleCop.4.5\StyleCop.targets')" Project="..\..\packages\StyleCop.4.5\StyleCop.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -12,6 +12,24 @@ The Apache Lucene.Net web site is at:
 
 Please join the Apache Lucene.Net-User mailing list by sending a message to:
   lucene-net-user-subscribe@incubator.apache.org
+  
+NOTICE
+	This is an experimental branch of lucene.net for a more .net idomatic port
+	of lucene 4.
+	
+		* The contrib projects do not exist.
+		* You will need to install the portable library tools and visual studio SP1
+		  * http://msdn.microsoft.com/en-us/library/gg597391.aspx
+		  * http://visualstudiogallery.msdn.microsoft.com/b0e0b5e9-e138-410b-ad10-00cb3caf4981/
+		* Gallio is now the main test runner.
+		* The code is currently strictly ms coding standard via style cop 4.5.
+		  * style cop is currently ensuring there is a file header on 
+		    all code files so that the apache license is placed in all files. 
+	      * style cop will run whenever you build a project.
+		* The project structure was changed to support nuget packages.
+		* NUnit compatibility must be maintained for mono support.
+		* The doc comment links to source files are to https://github.com/wickedsoftware/
+		  till this branch is accepted as the real lucene.net 4 branch.
 
 
 PROJECT STRUCTURE
@@ -20,14 +38,16 @@ PROJECT STRUCTURE
                              say that the build passes and misc command files.
 
     build/*                - build scripts and additional solution files.
-        artifacts          - disposable items that created for metrics or prep for packaging lucene.net.
+        artifacts          - disposable items that created for metrics or prep 
+                             for packaging lucene.net.
         bin                - temporary location of the items created by the build process.
-        scripts            - the various scripts that ci and build scripts need to be able to run.
+        scripts            - the various scripts that ci and build scripts 
+                             need to be able to run.
         solutions          - where various additional solutions files will go.
         
     packages               - the location of external assemblies, think of this folder as
-                             the typical lib folder, except that nuget requires it to be named
-                             packages.
+                             the typical lib folder, except that nuget requires it to 
+                             be named packages.
         
     src/*                  - the source code of various projects including contrib projects
         Lucene.Net
@@ -37,7 +57,8 @@ PROJECT STRUCTURE
         Lucene.Net.Test
         Lucene.Net.TestFramework.Test
 
-    tools/*                - any executables, plugins, etc. including ItemTemplates and ProjectTemplates
+    tools/*                - any executables, plugins, etc. including 
+    							* ItemTemplates and ProjectTemplates
 
 
 
@@ -64,9 +85,12 @@ DOCUMENTATION
     Build
         $ cd branch/build/scripts      (change the directory)
         $ build build                  (build the projects)
-        $ build test                   (run the tests, uses gallio on windows, nunit on mono)
-        $ build documents              (will build docs if you have sandcastle and msbuild installed)
-        $ build coverage               (will create ncover 3 code coverage if you have ncover 3 installed)
+        $ build test                   (run the tests, uses gallio on windows, 
+        									and nunit on mono)
+        $ build documents              (will build docs if you have sandcastle 
+        									and msbuild installed)
+        $ build coverage               (will create ncover 3 code coverage 
+        									if you have ncover 3 installed)
         $ bulid rules                  (will run fx-cop and put coverage into artifacts)
 
         * style cop will inject warnings whenever you build the project as long as you have

@@ -58,7 +58,7 @@ namespace Lucene.Net.Support
                 weakDictionary = new WeakDictionary<string, ReferenceType>(2);
             });
 
-            Assert.AreEqual(defaultTimeSpan, weakDictionary.PeriodicRemoval);
+            Assert.AreEqual(this.defaultTimeSpan, weakDictionary.PeriodicRemoval);
             Assert.AreEqual(2, weakDictionary.InitialCapacity);
             Assert.AreEqual(0, weakDictionary.Count);
             Assert.IsNotNull(weakDictionary.Comparer);
@@ -76,7 +76,7 @@ namespace Lucene.Net.Support
                 weakDictionary = new WeakDictionary<string, ReferenceType>(comparer);
             });
 
-            Assert.AreEqual(defaultTimeSpan, weakDictionary.PeriodicRemoval);
+            Assert.AreEqual(this.defaultTimeSpan, weakDictionary.PeriodicRemoval);
             Assert.AreEqual(0, weakDictionary.InitialCapacity);
             Assert.AreEqual(0, weakDictionary.Count);
             Assert.IsNotNull(weakDictionary.Comparer);
@@ -96,7 +96,7 @@ namespace Lucene.Net.Support
                 weakDictionary = new WeakDictionary<string, ReferenceType>(capacity, comparer);
             });
 
-            Assert.AreEqual(defaultTimeSpan, weakDictionary.PeriodicRemoval);
+            Assert.AreEqual(this.defaultTimeSpan, weakDictionary.PeriodicRemoval);
             Assert.AreEqual(capacity, weakDictionary.InitialCapacity);
             Assert.AreEqual(0, weakDictionary.Count);
             Assert.IsNotNull(weakDictionary.Comparer);
@@ -172,8 +172,8 @@ namespace Lucene.Net.Support
             var weakDictionary = new WeakDictionary<string, ReferenceType>(internalDictionary);
 
             bool success = weakDictionary.Contains(
-                            new KeyValuePair<string, ReferenceType>("one",
-                                internalDictionary["one"]));
+                                            new KeyValuePair<string, ReferenceType>("one",
+                                                internalDictionary["one"]));
 
             Assert.IsTrue(success, "Dictionary should have contained the key pair value.");
         }

@@ -87,7 +87,7 @@ namespace Lucene.Net.Util
         public void ReflectAsString()
         {
             var attribute = new FlagsAttribute();
-            var result =  attribute.ReflectAsString(false);
+            var result =  attribute.ReflectAsString();
             
             Assert.AreEqual("Flags=0", result);
 

@@ -45,14 +45,14 @@ namespace Lucene.Net.Analysis.TokenAttributes
     [Parallelizable]
     public class CharTermAttributeTest
     {
-
+        /*
         [Test]
         public void Append()
         {
             var attribute = new CharTermAttribute();
             
 
-        }
+        }*/
         
 
         [Test]
@@ -117,7 +117,7 @@ namespace Lucene.Net.Analysis.TokenAttributes
             // Note that c# does not support the CharSquence interface, but
             // its possible to still test the api to some degree.
 
-            const string value = "0123456789";
+            string value = "0123456789";
             var attribute = new CharTermAttribute();
             attribute.Append(value);
 
@@ -155,8 +155,8 @@ namespace Lucene.Net.Analysis.TokenAttributes
             var attribute = new CharTermAttribute();
             var copy = attribute.CreateCopyAndAssertEqual();
 
-            Assert.AreEqual("", attribute.ToString());
-            Assert.AreEqual("", copy.ToString());
+            Assert.AreEqual(string.Empty, attribute.ToString());
+            Assert.AreEqual(string.Empty, copy.ToString());
 
             attribute = new CharTermAttribute();
             attribute.CopyBuffer("hello".ToCharArray());
